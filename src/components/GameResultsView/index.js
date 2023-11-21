@@ -5,7 +5,6 @@ import {
   ResultImageContainer,
   ResultName,
   ResultText,
-  ResultButton,
 } from './styledComponents'
 
 const GameResultsView = props => {
@@ -61,9 +60,9 @@ const GameResultsView = props => {
           </ResultImageContainer>
           <ResultImageContainer>
             <ResultText>{text}</ResultText>
-            <ResultButton type="button" onClick={restartGame}>
+            <button type="button" onClick={restartGame}>
               PLAY AGAIN
-            </ResultButton>
+            </button>
           </ResultImageContainer>
         </>
       )}
